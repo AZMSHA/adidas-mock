@@ -1,0 +1,63 @@
+:root {
+  --white: rgb(249, 249, 249);
+  --main-green: 33, 127, 64;
+  --background-opacity: 0.35;
+  --dark-opacity: 0.5;
+  --light-opacity: 0.75;
+  --font-color-sec: gray;
+  color: white;
+}
+
+body {
+  background-image: linear-gradient(
+      rgba(var(--main-green), var(--background-opacity)),
+      rgb(var(--main-green), var(--background-opacity))
+    ),
+    url("/assets/pattern-bg.png");
+  backdrop-filter: var(--main-green);
+  background-color: black;
+  margin: 0px;
+  padding: 0px;
+  display: grid;
+  grid-template-columns: [page-start] 64px [content-start] 1fr [content-end] 64px [page-end];
+  grid-auto-flow: row;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.notification {
+  grid-column: page;
+  background-color: var(--white);
+  height: 3rem;
+}
+
+.nav-bar {
+  grid-column: page;
+}
+
+nav {
+  background-color: rgba(var(--main-green), var(--dark-opacity));
+}
+
+.nav-menu,
+.nav-header {
+  display: flex;
+  flex-direction: row;
+  height: 3rem;
+}
+
+.nav-menu li {
+  padding: 0rem 1rem;
+}
