@@ -1,5 +1,5 @@
 function hide(menuID) {
-  menu = document.getElementById(menuID);
+  const menu = document.getElementById(menuID);
   if (!menu.classList.contains("hide")) {
     menu.classList.add("hide");
   } else {
@@ -7,10 +7,23 @@ function hide(menuID) {
 }
 
 function show(menuID) {
-  menu = document.getElementById(menuID);
+  const menu = document.getElementById(menuID);
   if (menu.classList.contains("hide")) {
     menu.classList.remove("hide");
   } else {
+  }
+}
+
+function toggle(event) {
+  const button = event.target;
+  const menuID = button.getAttribute("menu");
+  const menu = document.getElementById(menuID);
+  if (menu.classList.contains("hide")) {
+    menu.classList.remove("hide");
+    button.style.backgroundImage = 'url("/assets/menu-close-icon.png")';
+  } else {
+    menu.classList.add("hide");
+    button.style.backgroundImage = 'url("/assets/burger-icon.png")';
   }
 }
 

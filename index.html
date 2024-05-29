@@ -25,7 +25,7 @@
         <img src="/assets/x-mark.png" alt="Close Mark" />
       </button>
     </aside>
-    <header class="nav-bar">
+    <header class="nav-bar desktop">
       <div class="nav-header">
         <img
           class="nav-logo"
@@ -66,6 +66,61 @@
             alt="search icon"
           />
         </span>
+      </nav>
+    </header>
+    <header class="nav-bar mobile breakpoint">
+      <div class="nav-header">
+        <div class="nav-top">
+          <img
+            class="nav-logo"
+            src="assets/logo.png"
+            alt="Adidas trademark 2024"
+          />
+          <input
+            class="hamburger-button"
+            menu="hamburger-menu"
+            onclick="toggle(event)"
+            type="button"
+            value=""
+          />
+        </div>
+        <ul class="nav-menu">
+          <a class="border-right" href="">
+            <li>MEMBERSHIP</li>
+          </a>
+          <a href="">
+            <li>ACCOUNT</li>
+          </a>
+        </ul>
+      </div>
+
+      <nav id="hamburger-menu" class="hide">
+        <ul class="nav-menu">
+          <span class="search-bar"
+            ><input class="search" placeholder="SEARCH" type="search" /><img
+              class="search-icon"
+              src="/assets/search-icon.png"
+              alt="search icon"
+            />
+          </span>
+          <div class="links">
+            <a href="">
+              <li>OUR TRACKS</li>
+            </a>
+            <a href="">
+              <li>FIND EVENTS</li>
+            </a>
+            <a href="">
+              <li>TRACK MAP</li>
+            </a>
+            <a href="">
+              <li>SHOP</li>
+            </a>
+            <a href="">
+              <li>ABOUT US</li>
+            </a>
+          </div>
+        </ul>
       </nav>
     </header>
     <div class="page-title">
@@ -416,10 +471,20 @@
           <a href="/#">About Us</a>
         </p>
         <ul>
-          <li><img src="/assets/facebook-icon.png" alt="Facebook icon" /></li>
-          <li><img src="/assets/twitter-icon.png" alt="Twitter icon" /></li>
-          <li><img src="/assets/instagram-icon.png" alt="Instagram icon" /></li>
-          <li><img src="/assets/linkedin-icon.png" alt="LinkedIn icon" /></li>
+          <a href="https://www.facebook.com">
+            <li><img src="/assets/facebook-icon.png" alt="Facebook icon" /></li>
+          </a>
+          <a href="https://www.twitter.com">
+            <li><img src="/assets/twitter-icon.png" alt="Twitter icon" /></li>
+          </a>
+          <a href="https://www.instagram.com">
+            <li>
+              <img src="/assets/instagram-icon.png" alt="Instagram icon" />
+            </li>
+          </a>
+          <a href="https://www.linkedin.com/in/hashir-adnan-hassan">
+            <li><img src="/assets/linkedin-icon.png" alt="LinkedIn icon" /></li>
+          </a>
         </ul>
         <span>&copy; copyright 2020 Adidas</span>
       </section>
