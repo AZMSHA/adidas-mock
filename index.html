@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/styles.css" />
     <link rel="stylesheet" href="styles/owl.theme.default.min.css" />
     <link rel="stylesheet" href="styles/owl.carousel.min.css" />
     <link rel="stylesheet" href="styles/fancybox.css" />
-    <link rel="stylesheet" href="styles/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,12 +16,12 @@
     <title>Adidas</title>
   </head>
   <body>
-    <aside class="notification">
+    <aside id="notification-bar" class="notification">
       <p class="font-xs medium">
         LIVE RACE STREAM FROM GATOR NATIONALS IN SARASOTA, FL /
         <a href="/watch-stream"> WATCH NOW</a>
       </p>
-      <button class="notification-close" type="button">
+      <button onclick="hide('notification-bar')" class="notification-close">
         <img src="/assets/x-mark.png" alt="Close Mark" />
       </button>
     </aside>
@@ -98,7 +98,11 @@
               <img
                 src="/assets/video-thumbnail-img.png"
                 alt="Picture of an Adidas jogger"
-              /><button type="button">
+              /><button
+                href="https://youtu.be/UmzFk68Bwdk?si=-FaRJYuuOqoaqbBo"
+                data-fancybox
+                type="button"
+              >
                 <img src="/assets/play-icon.png" alt="Video play button" />
               </button>
             </section>
@@ -117,7 +121,11 @@
               <img
                 src="/assets/video-thumbnail-img.png"
                 alt="Picture of an Adidas jogger"
-              /><button type="button">
+              /><button
+                href="https://youtu.be/UmzFk68Bwdk?si=-FaRJYuuOqoaqbBo"
+                data-fancybox
+                type="button"
+              >
                 <img src="/assets/play-icon.png" alt="Video play button" />
               </button>
             </section>
@@ -136,7 +144,11 @@
               <img
                 src="/assets/video-thumbnail-img.png"
                 alt="Picture of an Adidas jogger"
-              /><button type="button">
+              /><button
+                href="https://youtu.be/UmzFk68Bwdk?si=-FaRJYuuOqoaqbBo"
+                data-fancybox
+                type="button"
+              >
                 <img src="/assets/play-icon.png" alt="Video play button" />
               </button>
             </section>
@@ -155,18 +167,263 @@
               <img
                 src="/assets/video-thumbnail-img.png"
                 alt="Picture of an Adidas jogger"
-              /><button type="button">
+              /><button
+                href="https://youtu.be/UmzFk68Bwdk?si=-FaRJYuuOqoaqbBo"
+                data-fancybox
+                type="button"
+              >
                 <img src="/assets/play-icon.png" alt="Video play button" />
               </button>
             </section>
           </article>
         </div>
       </section>
-      <aside class="events-section"></aside>
-      <section class="featured-section"></section>
-      <section class="posts-section"></section>
-      <section class="banners-section"></section>
+      <aside class="events-section">
+        <ul class="events-list">
+          <h3>EVENTS</h3>
+
+          <li class="event">
+            <span class="event-marker">1</span>
+            <div class="event-link">
+              <a href="/event">SHOW IN USA</a><span>USA</span>
+            </div>
+          </li>
+
+          <li class="event">
+            <span class="event-marker">2</span>
+            <div class="event-link">
+              <a href="/event">ADIDAS SHOW IN USA</a><span>USA</span>
+            </div>
+          </li>
+          <li class="event">
+            <span class="event-marker">3</span>
+            <div class="event-link">
+              <a href="/event">ADIDAS SHOW</a><span>USA</span>
+            </div>
+          </li>
+          <li class="event">
+            <span class="event-marker">4</span>
+            <div class="event-link">
+              <a href="/event">ADIDAS IN USA</a><span>USA</span>
+            </div>
+          </li>
+        </ul>
+      </aside>
+      <section class="featured-section">
+        <div class="owl-carousel featured">
+          <div class="featured-product">
+            <img
+              class="product-img"
+              src="/assets/thubnail-slider-img.png"
+              alt="Featured product"
+            />
+          </div>
+
+          <div class="featured-product">
+            <img
+              class="product-img"
+              src="/assets/thubnail-slider-img.png"
+              alt="Featured product"
+            />
+          </div>
+
+          <div class="featured-product">
+            <img
+              class="product-img"
+              src="/assets/thubnail-slider-img.png"
+              alt="Featured product"
+            />
+          </div>
+
+          <div class="featured-product">
+            <img
+              class="product-img"
+              src="/assets/thubnail-slider-img.png"
+              alt="Featured product"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="posts-section">
+        <article class="post">
+          <img src="/assets/post-img.png" class="post-img" alt="Post Image" />
+          <div class="post-content">
+            <h3 class="post-heading">
+              2019 NATIONAL CHAMPIONS CROWNED AT Reebok
+            </h3>
+            <p class="post-paragraph">
+              Membership has its perks. Joining ADIDAS means you can race at
+              your local tracks
+            </p>
+          </div>
+          <footer>
+            <a href="/article"><span>READ MORE</span></a>
+          </footer>
+        </article>
+        <article class="post">
+          <img src="/assets/post-img.png" class="post-img" alt="Post Image" />
+          <div class="post-content">
+            <h3 class="post-heading">2019 NATIONAL CHAMPIONS</h3>
+            <p class="post-paragraph">Membership has its perks.</p>
+          </div>
+          <footer>
+            <a href="/article"><span>READ MORE</span></a>
+          </footer>
+        </article>
+        <article class="post">
+          <img src="/assets/post-img.png" class="post-img" alt="Post Image" />
+          <div class="post-content">
+            <h3 class="post-heading">
+              2019 NATIONAL CHAMPIONS CROWNED AT Reebok
+            </h3>
+            <p class="post-paragraph">
+              Membership has its perks. Joining ADIDAS means you can race at
+              your local tracks
+            </p>
+          </div>
+          <footer>
+            <a href="/article"><span>READ MORE</span></a>
+          </footer>
+        </article>
+      </section>
+      <section class="banners-section">
+        <article class="banner">
+          <img
+            class="banner-img"
+            src="/assets/zig-zag-img-1.png"
+            alt="Banner Image showing our new shoes"
+          />
+
+          <section class="banner-content">
+            <h3 class="banner-header">
+              2019 NATIONAL CHAMPIONS CROWNED AT REEBOK
+            </h3>
+            <p class="banner-paragraph">
+              Membership has its perks. Joining ADIDAS means you can race at
+              your local tracks
+            </p>
+          </section>
+        </article>
+        <article class="banner">
+          <img
+            class="banner-img"
+            src="/assets/zig-zag-img-2.png"
+            alt="Banner Image showing our new shoes"
+          />
+
+          <section class="banner-content">
+            <h3 class="banner-header">
+              2019 NATIONAL CHAMPIONS CROWNED AT REEBOK
+            </h3>
+            <p class="banner-paragraph">
+              Membership has its perks. Joining ADIDAS means you can race at
+              your local tracks
+            </p>
+          </section>
+        </article>
+      </section>
     </main>
+    <footer class="main-footer">
+      <section class="main-footer-form">
+        <h2 class="main-footer-header">GET IN TOUCH WITH US</h2>
+        <form action="/submit-form.php" method="post">
+          <div class="form-field">
+            <label for="name">NAME</label
+            ><input
+              id="name"
+              name="name"
+              placeholder="ENTER NAME"
+              type="text"
+              required
+            />
+          </div>
+          <div class="form-field">
+            <label for="email">EMAIL</label
+            ><input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="ENTER EMAIL"
+              required
+            />
+          </div>
+          <div class="form-field">
+            <label for="country">COUNTRY</label
+            ><select id="country" name="country" placeholder="USA" required>
+              <option value="" selected>Select a country first</option>
+              <option value="USA">USA</option>
+              <option value="Canada">Canada</option>
+              <option value="Australia">Australia</option>
+            </select>
+          </div>
+          <div class="form-field">
+            <label for="state">STATE</label>
+            <select
+              id="state"
+              name="state"
+              placeholder="WASHINGTON"
+              required
+            ></select>
+          </div>
+          <fieldset class="form-field gender">
+            <legend>GENDER</legend>
+            <div class="option">
+              <input
+                id="male"
+                name="gender"
+                value="male"
+                type="radio"
+                required
+              /><label for="male">MALE</label>
+            </div>
+            <div class="option">
+              <input
+                id="female"
+                name="gender"
+                value="female"
+                type="radio"
+                required
+              /><label for="female">FEMALE</label>
+            </div>
+            <div class="option">
+              <input
+                id="other"
+                name="gender"
+                value="other"
+                type="radio"
+                required
+              /><label for="other">OTHER</label>
+            </div>
+          </fieldset>
+          <div class="form-field message">
+            <label for="message">MESSAGE</label
+            ><textarea
+              style="resize: vertical"
+              id="message"
+              name="message"
+              placeholder="MESSAGE"
+            ></textarea>
+          </div>
+          <div class="submit-button-area">
+            <input type="submit" value="SUBMIT" />
+          </div>
+        </form>
+      </section>
+      <section class="footer-nav">
+        <p>
+          <a href="/#">Our Tracks</a> / <a href="/#">Find Events</a> /
+          <a href="/#">Track Map</a> / <a href="/#">Shop</a> /
+          <a href="/#">About Us</a>
+        </p>
+        <ul>
+          <li><img src="/assets/facebook-icon.png" alt="Facebook icon" /></li>
+          <li><img src="/assets/twitter-icon.png" alt="Twitter icon" /></li>
+          <li><img src="/assets/instagram-icon.png" alt="Instagram icon" /></li>
+          <li><img src="/assets/linkedin-icon.png" alt="LinkedIn icon" /></li>
+        </ul>
+        <span>&copy; copyright 2020 Adidas</span>
+      </section>
+    </footer>
     <script src="modules/jquery.min.js"></script>
     <script src="modules/owl.carousel.min.js"></script>
     <script src="modules/fancybox.umd.js"></script>
