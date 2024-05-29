@@ -891,6 +891,10 @@ form .form-field {
     display: none;
   }
 
+  .main-footer .footer-nav p {
+    width: 360px;
+  }
+
   .notification p {
     font-size: 12px;
     line-height: 24px;
@@ -903,6 +907,11 @@ form .form-field {
 
   nav#hamburger-menu {
     height: calc(100vh - 120px);
+  }
+
+  .main-footer-form .main-footer-header {
+    font-size: 24px;
+    font-weight: 400;
   }
 
   form {
@@ -920,18 +929,84 @@ form .form-field {
     padding-top: 30px !important;
   }
 
-  .banners-section .banner {
+  main .banners-section .banner {
     grid-template-columns: 1fr !important;
     height: auto;
   }
 
+  main .banners-section .banner:last-child .banner-content {
+    transform: translate(0px, 10px);
+    padding-bottom: 28px !important;
+  }
+
   .banners-section .banner-content {
-    padding: 15px 12px 18px 12px;
+    padding: 15px 12px 18px 12px !important;
   }
 
   .banners-section .banner .banner-img {
+    height: 191px;
+    object-position: 35% 50% !important;
     order: initial !important;
     clip-path: none !important;
+  }
+
+  .hero-slide .hero-thumbnail {
+    transform: translate(-7px, 3px);
+  }
+
+  .hero-slide .hero-thumbnail > img {
+    transform: translate(1px, -8px);
+  }
+
+  .hero-slide .hero-thumbnail button img {
+    transform: translate(-2px, 1px);
+  }
+
+  .hero-slide .hero-content {
+    max-width: 346px;
+    transform: translate(0px, -10px);
+  }
+
+  .hero-slide .hero-thumbnail button {
+    transform: translate(-40%, -68%);
+  }
+
+  .hero-section .owl-carousel .owl-dots {
+    bottom: 47px;
+    transform: translate(-70px, 0px);
+  }
+
+  .owl-carousel.featured .owl-dots {
+    bottom: -36px !important;
+  }
+
+  .post .post-img {
+    max-height: 162px !important;
+  }
+
+  .post {
+    padding-bottom: 62px !important;
+  }
+
+  .post h3 {
+    max-width: 295px;
+    line-height: 27px;
+  }
+
+  .post footer a {
+    transform: translate(-20px, 2px);
+  }
+
+  .post .post-content {
+    padding: 21px 10px 11px;
+  }
+
+  .posts-section {
+    gap: 20px;
+  }
+
+  .events-list {
+    transform: translate(0px, -14px) !important;
   }
 }
 
@@ -1032,6 +1107,10 @@ form .form-field {
     overflow: hidden;
   }
 
+  #hamburger-menu .search-icon {
+    right: 11px;
+  }
+
   #hamburger-menu .nav-menu .search {
     width: 100%;
     padding: 4px 9px 0px;
@@ -1118,6 +1197,11 @@ form .form-field {
     padding: 4px 0px 0px 1px;
   }
 
+  .events-list {
+    transform: translate(3px, -3px);
+    padding-bottom: 10px;
+  }
+
   .nav-header,
   nav {
     padding: 0px 16px;
@@ -1132,8 +1216,16 @@ form .form-field {
     height: 80px;
   }
 
+  .page-title {
+    grid-template-columns: 2fr 1.06fr;
+  }
+
+  .page-title-right {
+    transform: skewX(-18deg);
+  }
+
   .page-title-left {
-    margin-left: -16px;
+    margin-left: -20px;
     padding-left: 31px;
   }
 
@@ -1151,11 +1243,16 @@ form .form-field {
   }
 
   .hero-thumbnail img {
-    max-width: 259px !important;
+    max-width: 274px !important;
+  }
+
+  .hero-thumbnail button {
+    transform: translate(-39%, -53%);
   }
 
   .hero-thumbnail {
     margin-bottom: 28px;
+    transform: translate(-7px, 13px);
   }
 
   .hero-slide {
@@ -1170,15 +1267,15 @@ form .form-field {
   }
 
   .hero-content {
-    transform: translate(0px, 0px);
+    transform: translate(0px, 11px);
     width: 49%;
     margin: 0px;
     gap: 19px;
   }
 
   .hero-section .owl-dots {
-    bottom: 47px;
-    transform: translate(-68px, 0px);
+    bottom: 36px;
+    transform: translate(-56px, 0px);
   }
 
   .banners-section {
@@ -1189,13 +1286,60 @@ form .form-field {
     grid-template-columns: 50% 50% !important;
   }
 
+  .banners-section .banner:last-child .banner-content {
+    transform: translate(-3px, 1px);
+  }
+
+  .banner:last-child {
+    grid-template-columns: 48% 52% !important;
+  }
+  .banner:first-child {
+    grid-template-columns: 52% 48% !important;
+  }
+
+  .banner:last-child .banner-img {
+    object-position: 24% 50%;
+    object-fit: cover;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 20% 100%);
+  }
+
+  .banner:first-child .banner-img {
+    object-position: 1% 50%;
+    object-fit: cover;
+    clip-path: polygon(0% 0%, 100% 0%, 80% 100%, 0% 100%);
+  }
+
   .owl-carousel.featured {
     transform: translate(0px, 47px);
   }
 
+  .owl-carousel.featured .owl-dots {
+    bottom: -41px;
+  }
+
   .posts-section {
-    margin-top: 80px;
+    margin-top: 85px;
     grid-template-columns: 1fr 1fr;
+  }
+
+  .post .post-img {
+    width: 100%;
+    max-height: 160px;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .post .post-content {
+    padding: 16px 8px 10px 8px;
+  }
+
+  .post .post-content h3 {
+    margin-bottom: 4px;
+    word-spacing: 2.6px;
+  }
+
+  .post {
+    padding-bottom: 82px;
   }
 }
 
